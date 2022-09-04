@@ -14,7 +14,7 @@ properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKe
 
 
 stage('CheckOutCode'){
-git branch: 'development', credentialsId: '166c70a2-1df5-4993-a566-0a795862da8c', url: 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git'
+git credentialsId: '19af889a-8bf2-4f73-892e-309c86eb1987', url: 'https://github.com/bms-ec-junebatch/maven-web-application.git'
 }
 
 stage('Build'){
